@@ -23,13 +23,14 @@
       <img src="https://cdn.pixabay.com/photo/2021/01/29/15/25/alarm-5961342_960_720.png" alt="alarm clock img">
 
     
-
+<!-- to display the time -->
       <div class="clock">
         <span class="hours"></span>:
         <span class="minutes"></span>:
         <span class="seconds"></span>
         <span class="ampm"></span>
       </div>
+      <!-- to take time as input -->
       <div class="inputs">
 
       <input id="alarm-hours" type="number" min="1" max="12" value="12">
@@ -40,33 +41,12 @@
         <option value="PM">PM</option>
       </select>
     </div>
-      
-
+<!-- set alarm button -->
       <button id="set-alarm">Set Alarm</button>
-
+<!-- to show the list of alarm set -->
       <ul id="alarms-list"></ul>
   </div>
 
-
-
-
-
-
-
-    <!-- <div class="wrapper">
-       
-      <div class="timer-display">00:00:00</div>
-      <div class="container">
-        <div class="inputs">
-          <input type="number"id="hourInput"placeholder="00"min="0"max="23"/>
-          <input type="number" id="minuteInput" placeholder="00" min="0" max="59"
-          />
-        </div>
-        <button id="set">Add Alarm</button>
-        <div class="activeAlarms"></div>
-      </div>
-    </div> -->
-    <!-- Script -->
     <script src="index.js"></script>
   </body>
 </html>
