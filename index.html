@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alarm App</title>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <audio id="ringtone">
+      <source src="download.mp3" />
+  </audio>
+
+
+    <div class="container">
+      <img src="https://cdn.pixabay.com/photo/2021/01/29/15/25/alarm-5961342_960_720.png" alt="alarm clock img">
+
+    
+
+      <div class="clock">
+        <span class="hours"></span>:
+        <span class="minutes"></span>:
+        <span class="seconds"></span>
+        <span class="ampm"></span>
+      </div>
+      <div class="inputs">
+
+      <input id="alarm-hours" type="number" min="1" max="12" value="12">
+      <input id="alarm-minutes" type="number" min="0" max="59" value="00">
+    
+      <select id="alarm-am-pm">
+        <option value="AM">AM</option>
+        <option value="PM">PM</option>
+      </select>
+    </div>
+      
+
+      <button id="set-alarm">Set Alarm</button>
+
+      <ul id="alarms-list"></ul>
+  </div>
+
+
+
+
+
+
+
+    <!-- <div class="wrapper">
+       
+      <div class="timer-display">00:00:00</div>
+      <div class="container">
+        <div class="inputs">
+          <input type="number"id="hourInput"placeholder="00"min="0"max="23"/>
+          <input type="number" id="minuteInput" placeholder="00" min="0" max="59"
+          />
+        </div>
+        <button id="set">Add Alarm</button>
+        <div class="activeAlarms"></div>
+      </div>
+    </div> -->
+    <!-- Script -->
+    <script src="index.js"></script>
+  </body>
+</html>
